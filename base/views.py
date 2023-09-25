@@ -7,9 +7,16 @@ def inicio(request):
         "titulo": titulo,
         "nombre": nombre,
     }
-    return render(request, "index.html", context)
+    return render(request, 'index.html', context)
 
 def contacto(request):
-    titulo
+    titulo = "contacto"
+    nombre = "Edgar Eduardo"
+    context={
+        "titulo": titulo,
+    }
+    return render(request, 'contacto.html', context)
+
+
 
 
